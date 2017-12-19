@@ -8,9 +8,11 @@ class Professor(models.Model):
 	nome = models.CharField("Nome", max_length = 30)
 	cpf = models.CharField("CPF", max_length = 11)
 	genero = models.CharField("Gênero", max_length = 1, choices = choices.GENERO_CHOICES)
-	data_nascimento = models.DateField("Data de Nascimento")
+	data_nascimento = models.DateField("Data de Nascimento", null = True)
+
 	#Contato
-	telefone = models.CharField("Telefone", max_length = 12)
-	email = models.EmailField()
+	telefone = models.CharField("Telefone", max_length = 12, null = True)
+	email = models.EmailField(null = True)
+
 	#Usuario do Professor
-	user = models.OneToOneField(User, on_delete = models.CASCADE)
+	user = models.OneToOneField(User, on_delete = models.CASCADE, null = True)
