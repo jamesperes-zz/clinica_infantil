@@ -5,8 +5,8 @@ from padroes import choices
 
 class Professor(models.Model):
 	#Dados Pessoais
-	nome = models.CharField("Nome", max_length = 30)
-	cpf = models.CharField("CPF", max_length = 11)
+	nome = models.CharField("Nome", max_length = 30, null = True)
+	cpf = models.CharField("CPF", max_length = 11, null = True)
 	sexo = models.CharField("Sexo", max_length = 1, choices = choices.SEXO_CHOICES)
 	data_nascimento = models.DateField("Data de Nascimento", null = True)
 
