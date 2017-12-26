@@ -1,9 +1,9 @@
 SIM_NAO_CHOICES = (
-	('Sim', 'Sim'),
-	('Nao', 'Não')
+	(1, 'Sim'),
+	(0, 'Não')
 )
 
-GENERO_CHOICES = (
-	('Feminino', 'Feminino'),
-	('Masculino', 'Masculino')
+SEXO_CHOICES = (
+	(0, 'Feminino'),
+	(1, 'Masculino')
 )
