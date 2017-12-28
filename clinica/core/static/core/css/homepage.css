@@ -1,8 +1,13 @@
 .jumbotron {
     margin-bottom: 0px;
-    background-image: url("../img/background.jpeg");
+    background-image: url("../img/bear.jpeg");
     background-color: white;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
-    text-shadow: black 0.05em 0.05em 0.05em;
+    background-position: center center;
+}
+
+#titulo {
+	color: red;
+	text-shadow: 0.5px 0.5px #000000;
 }
