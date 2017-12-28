@@ -1,0 +1,8 @@
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url("../img/background.jpeg");
+    background-color: white;
+    background-size: auto;
+    background-repeat: no-repeat;
+    text-shadow: black 0.05em 0.05em 0.05em;
+}
