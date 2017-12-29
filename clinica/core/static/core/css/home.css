@@ -47,12 +47,19 @@ p {
 }
 
 .cabecalho-spam {
-	padding-top: 70px;
-	padding-bottom: 30px;
-	position: relative;
+	padding-top: 50px;
+	text-align: center;	
+	padding-bottom: 10px;
+}
+
+.cabecalho-map-spam {
+	padding-top: 25px;
+	text-align: center;	
+	padding-bottom: 10px;
 }
 
 footer {
+	background-image: url("../img/grass.jpeg");
     padding: 1em;
     color: white;
     background-color: #fc8100;
@@ -68,4 +75,8 @@ footer {
 
 .slide {
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#servicos {
+	text-align: center;
 }
