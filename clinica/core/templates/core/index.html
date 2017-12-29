@@ -117,13 +117,20 @@
 				</div>
   			</div>
   			<div class="tab-pane fade" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
-          <h2>Login</h2>
-          <form method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit">Login</button>
-          </form>
-  			</div>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm cabecalho-map-spam">
+                  <i class="material-icons" style="font-size:60px;color:#fc8100"> personal_video</i>
+                  <h3>Entrar no Sistema</h3>
+                  <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit">Entrar</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
 		</div>
 	<footer id="titulo">
 		PPGB | Universidade Federal do Piauí, 2018<br>
