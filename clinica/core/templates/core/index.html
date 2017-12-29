@@ -116,7 +116,14 @@
   					</div>
 				</div>
   			</div>
-  			<div class="tab-pane fade" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">Login</div>
+  			<div class="tab-pane fade" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
+          <h2>Login</h2>
+          <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Login</button>
+          </form>
+  			</div>
 		</div>
 	<footer id="titulo">
 		PPGB | Universidade Federal do Piauí, 2018<br>
